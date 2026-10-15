@@ -1,0 +1,27 @@
+import { House, Wrench, Droplets, ShieldCheck, ArrowDownToLine, PanelsTopLeft } from 'lucide-react';
+export const services = [
+  { title: 'Gutter installation', icon: House, description: 'A seamless fit. Lasting protection. Custom aluminum, copper, and vinyl gutters built for your property.', detail: 'We match gutter size, material, and placement to your roofline. Choose versatile seamless aluminum, distinctive copper, or budget-friendly vinyl.' },
+  { title: 'Gutter repair', icon: Wrench, description: 'Leaks, loose joints, or sagging gutters? Get your system back in shape before the next Texas storm.', detail: 'We assess leaking seams, loose hangers, poor pitch, and storm damage, then recommend repair or replacement based on the condition of your system.' },
+  { title: 'Gutter cleaning', icon: Droplets, description: 'Keep water flowing and problems away with thorough debris removal and a downspout flush.', detail: 'Leaves and debris can send water over your gutters instead of through them. Cleaning includes clearing accessible gutters and checking downspout flow.' },
+  { title: 'Gutter guards', icon: ShieldCheck, description: 'Less buildup. Less maintenance. Keep leaves out while letting rainwater flow freely.', detail: 'Leaf protection is selected for your roof and nearby trees. Guards reduce debris buildup, but periodic inspection and maintenance are still recommended.' },
+  { title: 'Downspouts & drainage', icon: ArrowDownToLine, description: 'Direct rainwater away from your foundation with smart downspout and drainage solutions.', detail: 'Downspout extensions and drainage improvements move water away from vulnerable areas. We evaluate discharge locations and existing drainage before recommending a solution.' },
+  { title: 'Fascia & soffit repair', icon: PanelsTopLeft, description: 'Restore the roofline behind your gutters and protect the details that hold it all together.', detail: 'Damaged fascia and soffits can compromise your roof edge. We assess deteriorated sections and discuss repair needs before gutter work begins.' },
+];
+export const cities = ['Austin', 'Round Rock', 'Cedar Park', 'Georgetown', 'Pflugerville', 'Leander', 'Kyle', 'Buda', 'San Marcos'];
+export const reviews = [
+ { name: 'Michael R.', city: 'Austin, TX', initials: 'MR', quote: 'The team was professional from the first call to the final cleanup. Our new gutters look great, and the whole process was easy.' },
+ { name: 'Jennifer S.', city: 'Round Rock, TX', initials: 'JS', quote: 'Clear pricing, great communication, and a crew that genuinely cared about our home. Exactly what we were looking for.' },
+ { name: 'David M.', city: 'Cedar Park, TX', initials: 'DM', quote: 'They helped us understand the drainage issue and walked us through the options. A friendly team and a really clean finish.' },
+];
+export const faqs = [
+ ['How do I get a free estimate?', 'Send us your contact information, city, and the service you need using our estimate form. We can discuss your property and arrange an assessment. There is no obligation to move forward.'],
+ ['Do you work on homes and commercial properties?', 'Yes. GutterMax offers gutter installation, repair, cleaning, leaf protection, and drainage solutions for residential and commercial properties. The right system depends on your roof and water flow.'],
+ ['What gutter materials can I choose from?', 'Options include seamless aluminum, copper, and vinyl. Aluminum is a popular low-maintenance choice; copper offers a distinctive appearance; vinyl can suit budget-focused projects. We can help compare materials for your property.'],
+ ['How often should gutters be cleaned?', 'Many homes benefit from cleaning twice a year, particularly after leaf fall and before the rainy season. Properties beneath trees or exposed to frequent storms may need more frequent service.'],
+ ['Do gutter guards eliminate maintenance?', 'Guards reduce leaf and debris buildup, but do not eliminate maintenance. Occasional inspections and cleaning help keep the system performing properly.'],
+ ['Can a leaking gutter be repaired instead of replaced?', 'Often, yes. Loose joints, isolated leaks, and minor hanger issues may be repairable. Widespread corrosion or extensive damage may make replacement the better long-term option.'],
+ ['What does gutter installation cost?', 'Price depends on the length of the roofline, material, property height, and any drainage or roof-edge repairs. An assessment gives you a project-specific price rather than a one-size-fits-all number.'],
+ ['What areas of Texas do you serve?', 'Tell us your city when requesting an estimate so we can confirm availability. The service-area cities currently shown are an illustrative Central Texas list pending confirmation.'],
+ ['What warranty comes with the work?', 'Ask for the written workmanship and manufacturer warranty terms for your selected service and material. Coverage, duration, and exclusions should be confirmed in your project proposal.'],
+];
+export function pageHead(title: string, description: string) { return { meta: [{ title: `${title} | GutterMax Services` }, { name: 'description', content: description }, { property: 'og:title', content: `${title} | GutterMax Services` }, { property: 'og:description', content: description }, { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' }] }; }
