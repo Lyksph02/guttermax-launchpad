@@ -128,7 +128,7 @@ export function SiteFooter() {
         </div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} GutterMax Services. All rights reserved.</span>
-          <span>Designed and Developed by Lyka May Saavedra.</span>
+          <span>Designed and Developed by Lyks Saavedra.</span>
         </div>
       </div>
     </footer>
