@@ -36,19 +36,20 @@ function Index() {
           </div>
         </div>
 
-        {/* Adjusted alignment: leveled items, constrained width matching the estimate button above */}
-        <div className="absolute bottom-5 left-0 right-0 w-full px-4 sm:px-6 z-10">
-          <div className="container-site max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
-            <div className="hero-proof flex items-center gap-6 text-xs sm:text-sm font-medium drop-shadow">
-              <span className="flex items-center gap-1.5"><ShieldCheck size={14} />Licensed & insured</span>
-              <span className="flex items-center gap-1.5"><Check size={14} />Free estimates</span>
-              <span className="flex items-center gap-1.5"><Check size={14} />Texas proud</span>
+        {/* Pinagsama sa iisang linya at inayos ang spacing para maging balanse at hindi sumagad sa kanan */}
+        <div className="absolute bottom-6 left-0 right-0 w-full px-6 z-10">
+          <div className="container-site flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-white">
+            <div className="hero-proof flex flex-wrap items-center gap-6 text-xs sm:text-sm font-medium drop-shadow">
+              <span className="flex items-center gap-1.5"><ShieldCheck size={15} />Licensed & insured</span>
+              <span className="flex items-center gap-1.5"><Check size={15} />Free estimates</span>
+              <span className="flex items-center gap-1.5"><Check size={15} />Texas proud</span>
             </div>
-            <div className="hero-rating flex items-center gap-2.5 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-md drop-shadow">
-              <span className="google-g font-bold text-sm bg-white text-black px-1.5 py-0.5 rounded">G</span>
+            
+            <div className="hero-rating flex items-center gap-2.5 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-lg drop-shadow">
+              <span className="google-g font-bold text-xs bg-white text-black px-1.5 py-0.5 rounded">G</span>
               <div>
-                <div className="scale-90 origin-left"><Stars /></div>
-                <div className="text-[11px] sm:text-xs opacity-90 leading-tight">Your next five-star experience starts here.</div>
+                <div className="scale-75 origin-left"><Stars /></div>
+                <div className="text-[10px] sm:text-xs opacity-90 leading-none mt-0.5">Your next five-star experience starts here.</div>
               </div>
             </div>
           </div>
