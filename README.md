@@ -56,13 +56,11 @@ PAGES & SECTIONS
 
 6. FAQ:
 
-This project was built with [Lovable](https://lovable.dev).
 
-## Build with Lovable
+## Build with AI
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/ac76f73c-f9d9-59d0-9e0a-7e7d1c8d4878).
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Ship faster**: describe what you want to build and handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.
 - **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
