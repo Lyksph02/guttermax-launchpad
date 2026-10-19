@@ -36,20 +36,20 @@ function Index() {
           </div>
         </div>
 
-        {/* Direktang inayos dito ang pwesto para magkatabi at hindi sumagad sa gilid */}
-        <div className="absolute bottom-6 left-0 right-0 w-full px-6 z-10">
+        {/* Mas pinaliit ang font sizes at inalis ang background box para maging balanse at malinis */}
+        <div className="absolute bottom-5 left-0 right-0 w-full px-6 z-10">
           <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white">
-            <div className="flex flex-wrap items-center gap-6 text-sm font-medium drop-shadow">
-              <span className="flex items-center gap-1.5"><ShieldCheck size={16} />Licensed & insured</span>
-              <span className="flex items-center gap-1.5"><Check size={16} />Free estimates</span>
-              <span className="flex items-center gap-1.5"><Check size={16} />Texas proud</span>
+            <div className="flex flex-wrap items-center gap-5 text-[11px] sm:text-xs font-light drop-shadow opacity-90">
+              <span className="flex items-center gap-1.5"><ShieldCheck size={13} />Licensed & insured</span>
+              <span className="flex items-center gap-1.5"><Check size={13} />Free estimates</span>
+              <span className="flex items-center gap-1.5"><Check size={13} />Texas proud</span>
             </div>
             
-            <div className="flex items-center gap-3 bg-black/40 backdrop-blur-md px-3.5 py-2 rounded-xl drop-shadow border border-white/10">
-              <span className="font-bold text-xs bg-white text-black px-2 py-0.5 rounded">G</span>
+            <div className="flex items-center gap-2 drop-shadow">
+              <span className="font-bold text-[10px] bg-white text-black px-1.5 py-0.5 rounded">G</span>
               <div>
-                <div className="scale-90 origin-left"><Stars /></div>
-                <div className="text-xs opacity-90 leading-tight mt-0.5">Your next five-star experience starts here.</div>
+                <div className="scale-[0.65] origin-left -mb-1"><Stars /></div>
+                <div className="text-[10px] font-light opacity-90 leading-tight">Your next five-star experience starts here.</div>
               </div>
             </div>
           </div>
