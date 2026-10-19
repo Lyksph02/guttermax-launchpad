@@ -36,20 +36,20 @@ function Index() {
           </div>
         </div>
 
-        {/* Pinagsama sa iisang linya at inayos ang spacing para maging balanse at hindi sumagad sa kanan */}
+        {/* Direktang inayos dito ang pwesto para magkatabi at hindi sumagad sa gilid */}
         <div className="absolute bottom-6 left-0 right-0 w-full px-6 z-10">
-          <div className="container-site flex flex-col md:flex-row items-start md:items-center justify-between gap-6 text-white">
-            <div className="hero-proof flex flex-wrap items-center gap-6 text-xs sm:text-sm font-medium drop-shadow">
-              <span className="flex items-center gap-1.5"><ShieldCheck size={15} />Licensed & insured</span>
-              <span className="flex items-center gap-1.5"><Check size={15} />Free estimates</span>
-              <span className="flex items-center gap-1.5"><Check size={15} />Texas proud</span>
+          <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white">
+            <div className="flex flex-wrap items-center gap-6 text-sm font-medium drop-shadow">
+              <span className="flex items-center gap-1.5"><ShieldCheck size={16} />Licensed & insured</span>
+              <span className="flex items-center gap-1.5"><Check size={16} />Free estimates</span>
+              <span className="flex items-center gap-1.5"><Check size={16} />Texas proud</span>
             </div>
             
-            <div className="hero-rating flex items-center gap-2.5 bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-lg drop-shadow">
-              <span className="google-g font-bold text-xs bg-white text-black px-1.5 py-0.5 rounded">G</span>
+            <div className="flex items-center gap-3 bg-black/40 backdrop-blur-md px-3.5 py-2 rounded-xl drop-shadow border border-white/10">
+              <span className="font-bold text-xs bg-white text-black px-2 py-0.5 rounded">G</span>
               <div>
-                <div className="scale-75 origin-left"><Stars /></div>
-                <div className="text-[10px] sm:text-xs opacity-90 leading-none mt-0.5">Your next five-star experience starts here.</div>
+                <div className="scale-90 origin-left"><Stars /></div>
+                <div className="text-xs opacity-90 leading-tight mt-0.5">Your next five-star experience starts here.</div>
               </div>
             </div>
           </div>
