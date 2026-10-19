@@ -14,7 +14,7 @@ export const Route = createFileRoute('/')({
 function Index() {
   return (
     <main>
-      <section className="hero">
+      <section className="hero relative">
         <img className="hero-img" src={home} width={1536} height={1024} alt="Texas brick home with seamless white gutters and a green lawn" fetchPriority="high" />
         <div className="container-site hero-content">
           <div className="eyebrow">
@@ -35,25 +35,25 @@ function Index() {
             </Button>
           </div>
         </div>
-      </section>
 
-      {/* Inilipat dito ang Proof at Rating para nasa ilalim ng hero image at hindi sumabit sa damuhan */}
-      <div className="container-site py-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="hero-proof flex items-center gap-6">
-            <span className="flex items-center gap-1.5"><ShieldCheck size={16} />Licensed & insured</span>
-            <span className="flex items-center gap-1.5"><Check size={16} />Free estimates</span>
-            <span className="flex items-center gap-1.5"><Check size={16} />Texas proud</span>
-          </div>
-          <div className="hero-rating flex items-center gap-3">
-            <span className="google-g font-bold text-lg">G</span>
-            <div>
-              <Stars />
-              <div className="mt-1 text-sm">Your next five-star experience starts here.</div>
+        {/* Naka-position na ngayon sa loob ng hero section, eksakto sa ibabaw ng damuhan */}
+        <div className="absolute bottom-6 left-0 right-0 w-full px-6 z-10">
+          <div className="container-site flex flex-col lg:flex-row items-center justify-between gap-4 text-white">
+            <div className="hero-proof flex items-center gap-6 text-sm md:text-base font-medium drop-shadow">
+              <span className="flex items-center gap-1.5"><ShieldCheck size={16} />Licensed & insured</span>
+              <span className="flex items-center gap-1.5"><Check size={16} />Free estimates</span>
+              <span className="flex items-center gap-1.5"><Check size={16} />Texas proud</span>
+            </div>
+            <div className="hero-rating flex items-center gap-3 drop-shadow">
+              <span className="google-g font-bold text-lg bg-white text-black px-2 py-0.5 rounded">G</span>
+              <div>
+                <Stars />
+                <div className="mt-1 text-xs md:text-sm">Your next five-star experience starts here.</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <TrustStrip />
 
