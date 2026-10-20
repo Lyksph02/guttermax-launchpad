@@ -14,9 +14,9 @@ export const Route = createFileRoute('/')({
 function Index() {
   return (
     <main>
-      <section className="hero relative pb-12">
+      <section className="hero relative pb-16">
         <img className="hero-img" src={home} width={1536} height={1024} alt="Texas brick home with seamless white gutters and a green lawn" fetchPriority="high" />
-        <div className="container-site hero-content pb-8">
+        <div className="container-site hero-content pb-12">
           <div className="eyebrow">
             <span className="dot" />
             Your local Texas gutter specialists
@@ -35,8 +35,8 @@ function Index() {
             </Button>
           </div>
 
-          {/* Na-adjust at inilagay na rito sa loob ng hero-content para laging kita at hindi na ma-cut off sa mobile */}
-          <div className="mt-8 pt-6 border-t border-white/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-white">
+          {/* Fully stacked & auto-adjusting container for mobile and desktop */}
+          <div className="mt-8 flex flex-col items-start gap-4 text-white">
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-white drop-shadow">
               <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Licensed & insured</span>
               <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Free estimates</span>
