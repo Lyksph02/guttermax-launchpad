@@ -14,50 +14,41 @@ export const Route = createFileRoute('/')({
 function Index() {
   return (
     <main>
-      <section className="hero relative">
-        <img className="hero-img" src={home} width={1536} height={1024} alt="Texas brick home with seamless white gutters and a green lawn" fetchPriority="high" />
+      <section className="hero">
+        <img className="hero-img" src={home} width={1536} height={1024} alt="Texas brick home with seamless white gutters and a green lawn" fetchPriority="high"/>
         <div className="container-site hero-content">
           <div className="eyebrow">
-            <span className="dot" />
-            Your local Texas gutter specialists
+            <span className="dot"/>Your local Texas gutter specialists
           </div>
-          <h1>
-            Protect your home.<br />
+          <h1>Protect your home.<br/>
             From the <span>top down.</span>
           </h1>
-          <p className="hero-description">Strong gutters. Expert care. Zero guesswork.<br />Dependable gutter solutions for Texas homes and businesses—because what’s underneath matters.</p>
+          <p className="hero-description">Strong gutters. Expert care. Zero guesswork.<br/>Dependable gutter solutions for Texas homes and businesses—because what’s underneath matters.</p>
           <div className="hero-actions">
-            <EstimateButton variant="hero" />
+            <EstimateButton variant="hero"/>
             <Button asChild variant="heroOutline" size="lg">
-              <Link to="/services">
-                Explore Our Services <ArrowRight />
-              </Link>
+              <Link to="/services">Explore Our Services<ArrowRight/></Link>
             </Button>
           </div>
-        </div>
+          
+          <div className="hero-proof">
+            <span><ShieldCheck size={14}/>Licensed & insured</span>
+            <span><Check size={14}/>Free estimates</span>
+            <span><Check size={14}/>Texas proud</span>
+          </div>
 
-        {/* Mas pinaliit ang font sizes at inalis ang background box para maging balanse at malinis */}
-        <div className="absolute bottom-5 left-0 right-0 w-full px-6 z-10">
-          <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white">
-            <div className="flex flex-wrap items-center gap-5 text-[11px] sm:text-xs font-light drop-shadow opacity-90">
-              <span className="flex items-center gap-1.5"><Check size={13} />Licensed & insured</span>
-              <span className="flex items-center gap-1.5"><Check size={13} />Free estimates</span>
-              <span className="flex items-center gap-1.5"><Check size={13} />Texas proud</span>
-            </div>
-            
-            <div className="flex items-center gap-2 drop-shadow">
-              <span className="font-bold text-[10px] bg-white text-black px-1.5 py-0.5 rounded">G</span>
-              <div>
-                <div className="scale-[0.65] origin-left -mb-1"><Stars /></div>
-                <div className="text-[10px] font-light opacity-90 leading-tight">Your next five-star experience starts here.</div>
-              </div>
+          <div className="hero-rating">
+            <span className="google-g">G</span>
+            <div>
+              <Stars/>
+              <div className="mt-1">Your next five-star experience starts here.</div>
             </div>
           </div>
         </div>
       </section>
 
-      <TrustStrip />
-
+      <TrustStrip/>
+      
       <section className="section">
         <div className="container-site">
           <div className="section-heading">
@@ -67,17 +58,15 @@ function Index() {
               <p className="section-copy">From a fresh install to a seasonal cleanout, we’ve got your roofline covered.</p>
             </div>
             <Button asChild variant="outline">
-              <Link to="/services">
-                View All Services <ArrowRight />
-              </Link>
+              <Link to="/services">View All Services<ArrowRight/></Link>
             </Button>
           </div>
-          <ServicesGrid />
+          <ServicesGrid/>
         </div>
       </section>
-
-      <WhySection />
-
+      
+      <WhySection/>
+      
       <section className="section">
         <div className="container-site">
           <div className="section-heading">
@@ -86,16 +75,14 @@ function Index() {
               <h2>A stronger roofline starts here.</h2>
             </div>
             <Button asChild variant="outline">
-              <Link to="/gallery">
-                Explore the Gallery <ArrowRight />
-              </Link>
+              <Link to="/gallery">Explore the Gallery<ArrowRight/></Link>
             </Button>
           </div>
-          <BeforeAfter />
+          <BeforeAfter/>
           <p className="sample-note">Illustrative before-and-after concept using generated photos, not an actual completed project.</p>
         </div>
       </section>
-
+      
       <section className="section">
         <div className="container-site">
           <div className="section-heading">
@@ -104,17 +91,15 @@ function Index() {
               <h2>Service worth talking about.</h2>
             </div>
             <Button asChild variant="outline">
-              <Link to="/reviews">
-                Customer Reviews <ArrowRight />
-              </Link>
+              <Link to="/reviews">Customer Reviews<ArrowRight/></Link>
             </Button>
           </div>
-          <ReviewCards />
+          <ReviewCards/>
         </div>
       </section>
 
-      <ServiceArea />
-      <CTABanner />
+      <ServiceArea/>
+      <CTABanner/>
     </main>
   );
 }
