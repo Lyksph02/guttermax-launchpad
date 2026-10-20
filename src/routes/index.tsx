@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
-import { Check, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Check, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { EstimateButton, CTABanner } from '@/components/site';
 import { TrustStrip, ServicesGrid, WhySection, BeforeAfter, ReviewCards, ServiceArea, Stars } from '@/components/sections';
@@ -14,9 +14,9 @@ export const Route = createFileRoute('/')({
 function Index() {
   return (
     <main>
-      <section className="hero relative pb-16">
+      <section className="hero relative">
         <img className="hero-img" src={home} width={1536} height={1024} alt="Texas brick home with seamless white gutters and a green lawn" fetchPriority="high" />
-        <div className="container-site hero-content pb-12">
+        <div className="container-site hero-content">
           <div className="eyebrow">
             <span className="dot" />
             Your local Texas gutter specialists
@@ -34,20 +34,22 @@ function Index() {
               </Link>
             </Button>
           </div>
+        </div>
 
-          {/* Fully stacked & auto-adjusting container for mobile and desktop */}
-          <div className="mt-8 flex flex-col items-start gap-4 text-white">
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-white drop-shadow">
-              <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Licensed & insured</span>
-              <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Free estimates</span>
-              <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Texas proud</span>
+        {/* Mas pinaliit ang font sizes at inalis ang background box para maging balanse at malinis */}
+        <div className="absolute bottom-5 left-0 right-0 w-full px-6 z-10">
+          <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white">
+            <div className="flex flex-wrap items-center gap-5 text-[11px] sm:text-xs font-light drop-shadow opacity-90">
+              <span className="flex items-center gap-1.5"><Check size={13} />Licensed & insured</span>
+              <span className="flex items-center gap-1.5"><Check size={13} />Free estimates</span>
+              <span className="flex items-center gap-1.5"><Check size={13} />Texas proud</span>
             </div>
             
             <div className="flex items-center gap-2 drop-shadow">
-              <span className="font-bold text-[10px] bg-white text-black px-1.5 py-0.5 rounded shadow">G</span>
+              <span className="font-bold text-[10px] bg-white text-black px-1.5 py-0.5 rounded">G</span>
               <div>
                 <div className="scale-[0.65] origin-left -mb-1"><Stars /></div>
-                <div className="text-[10px] font-normal text-white leading-tight">Your next five-star experience starts here.</div>
+                <div className="text-[10px] font-light opacity-90 leading-tight">Your next five-star experience starts here.</div>
               </div>
             </div>
           </div>
