@@ -14,7 +14,7 @@ export const Route = createFileRoute('/')({
 function Index() {
   return (
     <main>
-      <section className="hero relative">
+      <section className="hero relative pb-16 md:pb-0">
         <img className="hero-img" src={home} width={1536} height={1024} alt="Texas brick home with seamless white gutters and a green lawn" fetchPriority="high" />
         <div className="container-site hero-content">
           <div className="eyebrow">
@@ -36,11 +36,11 @@ function Index() {
           </div>
         </div>
 
-        {/* Mas pinaliit ang font sizes at inalis ang background box para maging balanse at malinis */}
-        <div className="absolute bottom-5 left-0 right-0 w-full px-6 z-10">
-          <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-white">
-            <div className="flex flex-wrap items-center gap-5 text-[11px] sm:text-xs font-light drop-shadow opacity-90">
-              <span className="flex items-center gap-1.5"><ShieldCheck size={13} />Licensed & insured</span>
+        {/* Responsive fix: Naka-stack sa mobile para hindi mag-overlap, absolute positioning lang sa desktop */}
+        <div className="mt-8 md:mt-0 md:absolute md:bottom-5 md:left-0 md:right-0 w-full px-6 z-10">
+          <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white">
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-light drop-shadow opacity-90">
+              <span className="flex items-center gap-1.5"><Check size={13} />Licensed & insured</span>
               <span className="flex items-center gap-1.5"><Check size={13} />Free estimates</span>
               <span className="flex items-center gap-1.5"><Check size={13} />Texas proud</span>
             </div>
