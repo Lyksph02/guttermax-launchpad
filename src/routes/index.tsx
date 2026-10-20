@@ -37,19 +37,19 @@ function Index() {
         </div>
 
         {/* Responsive fix: Naka-stack sa mobile para hindi mag-overlap, absolute positioning lang sa desktop */}
-        <div className="mt-8 md:mt-0 md:absolute md:bottom-5 md:left-0 md:right-0 w-full px-6 z-10">
+        <div className="mt-6 md:absolute md:bottom-5 md:left-0 md:right-0 w-full px-6 z-10 pb-8 md:pb-0">
           <div className="container-site max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-white">
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-light drop-shadow opacity-90">
-              <span className="flex items-center gap-1.5"><Check size={13} />Licensed & insured</span>
-              <span className="flex items-center gap-1.5"><Check size={13} />Free estimates</span>
-              <span className="flex items-center gap-1.5"><Check size={13} />Texas proud</span>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium drop-shadow-md text-white opacity-100">
+              <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Licensed & insured</span>
+              <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Free estimates</span>
+              <span className="flex items-center gap-1.5"><Check size={13} className="text-emerald-400" />Texas proud</span>
             </div>
             
-            <div className="flex items-center gap-2 drop-shadow">
-              <span className="font-bold text-[10px] bg-white text-black px-1.5 py-0.5 rounded">G</span>
+            <div className="flex items-center gap-2 drop-shadow-md">
+              <span className="font-bold text-[10px] bg-white text-black px-1.5 py-0.5 rounded shadow">G</span>
               <div>
                 <div className="scale-[0.65] origin-left -mb-1"><Stars /></div>
-                <div className="text-[10px] font-light opacity-90 leading-tight">Your next five-star experience starts here.</div>
+                <div className="text-[10px] font-normal text-white leading-tight">Your next five-star experience starts here.</div>
               </div>
             </div>
           </div>
